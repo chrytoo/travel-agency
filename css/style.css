@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+nav {
+  width: 100%;
+  position: absolute;
+  background-color: #222831;
+  height: 3em;
+  padding: 10px; }
+  nav #logo {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.2em;
+    margin-left: 20px; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right; }
+    nav ul li {
+      display: inline-block;
+      margin: 10px;
+      padding-bottom: 10px;
+      font-size: .8em; }
+      nav ul li a {
+        text-decoration: none;
+        color: #FFFFFF; }
+
+#jumbotron {
+  width: 100%;
+  background: url("../img/main.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 800px;
+  margin: 0 auto; }
+  #jumbotron .heading {
+    padding-top: 300px;
+    float: left;
+    padding-left: 170px; }
+  #jumbotron #mainHeading {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    color: #FFFFFF; }
+  #jumbotron p {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #FFFFFF; }
+  #jumbotron form {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 150px;
+    right: 0; }
+    #jumbotron form .form-grp {
+      padding: 10px; }
+      #jumbotron form .form-grp p {
+        color: #000; }
+      #jumbotron form .form-grp ul {
+        list-style-type: none; }
+        #jumbotron form .form-grp ul li {
+          display: inline-block;
+          padding: 10px; }
+        #jumbotron form .form-grp ul li > a {
+          text-decoration: none;
+          color: #FFF;
+          background-color: #f9be37; }
+
+#offers {
+  width: 100%; }
+  #offers .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 60px; }
+    #offers .container .container-item {
+      padding: 20px; }
+      #offers .container .container-item h5 {
+        margin-top: 10px;
+        margin-bottom: 15px; }
+      #offers .container .container-item img {
+        width: 85px;
+        height: auto; }
+
+#about {
+  background-color: #f8faff; }
+  #about img {
+    width: 50%; }
+  #about .about-text {
+    width: 50%;
+    float: right;
+    padding: 60px; }
+    #about .about-text h2 {
+      font-family: "Playfair Display", sans-serif;
+      font-weight: bold;
+      font-size: 2em; }
+    #about .about-text p {
+      padding-top: 50px; }
+
+#calendar {
+  width: 100%;
+  padding-top: 50px; }
+  #calendar img {
+    width: 20px;
+    height: auto;
+    margin: 10px; }
+  #calendar table {
+    width: 55%;
+    margin: 0 auto; }
+  #calendar tbody {
+    background-color: #f8faff; }
+    #calendar tbody span {
+      font-weight: bold; }
+    #calendar tbody .dates {
+      text-transform: uppercase;
+      font-size: .7em; }
+    #calendar tbody .cal {
+      text-align: center; }
+  #calendar th {
+    background-color: #222831;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 10px; }
+  #calendar td > img {
+    background-color: #f9be37; }
+
+#bottom {
+  width: 100%;
+  background-color: #222831;
+  margin-top: 25px; }
+  #bottom iframe {
+    margin-top: 20px;
+    margin-left: 100px; }
+  #bottom #links {
+    display: inline-block;
+    margin-left: 200px;
+    margin-bottom: 100px; }
+    #bottom #links img {
+      width: 64px;
+      height: auto; }
+    #bottom #links h4, #bottom #links a {
+      color: #f9be37; }
+    #bottom #links h4 {
+      font-size: 1.5em;
+      padding-bottom: 30px; }
+    #bottom #links h6 {
+      color: #FFFFFF;
+      font-size: 1em; }
+    #bottom #links ul {
+      list-style-type: none; }
+      #bottom #links ul li {
+        display: inline-block;
+        margin: 10px; }
+
+@media screen and (max-width: 950px) {
+  #bottom #links {
+    display: block; } }
+@media screen and (max-width: 650px) {
+  nav {
+    height: auto; }
+    nav #logo {
+      display: block;
+      width: 100%;
+      font-size: 1em;
+      text-align: right; }
+    nav ul > li {
+      display: block; }
+
+  #jumbotron form {
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    #jumbotron form .form-grp ul > li {
+      display: block; }
+
+  #calendar table {
+    width: 100%; }
+
+  #offers .container {
+    grid-template-columns: auto; } }
+
+/*# sourceMappingURL=style.css.map */

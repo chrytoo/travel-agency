@@ -1,0 +1,284 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main_font;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    background-color: $teget;
+    height: 3em;
+    padding: 10px;
+
+    #logo {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: $secondary_font;
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        float: right;
+        li {
+            display: inline-block;
+            margin: 10px;
+            padding-bottom: 10px;
+            font-size: .8em;
+
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+#jumbotron {
+    width: 100%;
+    background: url('../img/main.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 800px;
+    margin: $center_margin;
+
+    .heading {
+        padding-top: 300px;
+        float: left;
+        padding-left: 170px;
+    }
+
+    #mainHeading {
+        font-family: $secondary_font;
+        font-weight: bold;
+        font-size: 4em;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: $main_font;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    form {
+        background-color: #FFF;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 150px;
+        right: 0;
+
+        .form-grp {
+            padding: 10px;
+            p { color: #000; }
+
+            ul {
+                list-style-type: none;
+
+                li { display: inline-block; padding: 10px; }
+
+                li>a {
+                    text-decoration: none;
+                    color: #FFF;
+                    background-color: $zuta;
+                
+                }
+            }
+
+            
+        }
+    }
+}
+
+#offers {
+    width: 100%;
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 60px;
+
+        .container-item {
+            padding: 20px;
+
+            h5 {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+            img {
+                width: 85px;
+                height: auto;
+            }
+        }
+    }
+}
+
+#about {
+    background-color: $svetlo-siva;
+    img {
+        width: 50%;
+    }
+    .about-text {
+        width: 50%;
+        float: right;
+        padding: 60px;
+
+        h2 {
+            font-family: $secondary_font;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        p {
+            padding-top: 50px;
+        }
+
+    }
+}
+
+#calendar {
+    width: 100%;
+    padding-top: 50px;
+
+    img { width: 20px; height: auto; margin: 10px; }
+    
+    table {
+        width: 55%;
+        margin: $center_margin;
+    }
+
+    tbody {
+        background-color: $svetlo_siva;
+
+        span {
+            font-weight: bold;
+        }
+
+        .dates {
+            text-transform: uppercase;
+            font-size: .7em;
+        }
+
+        .cal {
+            text-align: center;
+        }
+        
+    }
+
+    th {
+        background-color: $teget;
+        text-align: left;
+        
+        color: #FFFFFF;
+        padding: 10px;
+        
+    }
+
+
+
+    td>img {
+        background-color: $zuta;
+    }
+}
+
+#bottom {
+    width: 100%;
+    background-color: $teget;
+    margin-top: 25px;
+
+    iframe {
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    #links {
+        display: inline-block;
+        margin-left: 200px;
+        margin-bottom: 100px;
+
+        img {
+            width: 64px;
+            height: auto;
+        }
+
+        h4, a {
+            color: $zuta;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            padding-bottom: 30px;
+        }
+
+        h6 { 
+            color: #FFFFFF;
+            font-size: 1em; 
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: $srednji_ekran) {
+    #bottom {
+        iframe {  }
+        #links { display: block; }
+    }
+}
+
+@media screen and(max-width: $mali_ekran) {
+    nav {
+        
+        height: auto;
+        #logo { display: block; width: 100%; font-size: 1em; text-align: right;}
+
+        ul>li {
+            display: block;
+        }
+    }
+
+    #jumbotron {
+        
+
+        form {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            .form-grp {
+                
+                ul>li {
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+
+    #calendar {
+        table {
+            width: 100%;
+        }
+    }
+
+    #offers {
+        .container {
+            grid-template-columns: auto;
+        }
+    }
+}
