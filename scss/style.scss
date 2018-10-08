@@ -54,7 +54,7 @@ nav {
     .heading {
         padding-top: 300px;
         float: left;
-        padding-left: 170px;
+        padding-left: 180px;
     }
 
     #mainHeading {
@@ -73,10 +73,9 @@ nav {
     form {
         background-color: #FFF;
         margin: 0;
-        padding: 0;
         position: absolute;
-        bottom: 150px;
         right: 0;
+        bottom: 185px;
 
         .form-grp {
             padding: 10px;
@@ -267,6 +266,16 @@ nav {
                     
                 }
             }
+        }
+    }
+
+    #about {
+        img {
+            width: 100%;
+        }
+
+        .about-text {
+            width: 100%;
         }
     }
 
