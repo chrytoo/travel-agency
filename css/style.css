@@ -246,6 +246,18 @@ nav ul li a {
   #offers .container {
     grid-template-columns: auto;
   }
+
+  #bottom {
+    width: 100%;
+  }
+  #bottom iframe {
+    display: block;
+    width: 100%;
+  }
+  #bottom #links ul > li {
+    display: block;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

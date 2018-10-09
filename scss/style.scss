@@ -290,4 +290,16 @@ nav {
             grid-template-columns: auto;
         }
     }
+
+    #bottom {
+        width: 100%;
+        iframe { display: block; width: 100%;}
+        #links {
+            
+            ul>li {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
 }
