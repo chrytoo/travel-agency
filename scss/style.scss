@@ -71,11 +71,11 @@ nav {
     }
 
     form {
-        background-color: #FFF;
+        background-color: rgba(255, 255, 255, .4);
         margin: 0;
         position: absolute;
         right: 0;
-        bottom: 185px;
+        bottom: -7em;
 
         .form-grp {
             padding: 10px;
@@ -90,6 +90,7 @@ nav {
                     text-decoration: none;
                     color: #FFF;
                     background-color: $zuta;
+                    padding: 5px;
                 
                 }
             }
@@ -235,8 +236,15 @@ nav {
 }
 
 @media screen and(max-width: $srednji_ekran) {
+
+    #jumbotron {
+        form {
+            bottom: -14em;
+        }
+    }
+
     #bottom {
-        iframe {  }
+        iframe { width: 100% }
         #links { display: block; }
     }
 }
@@ -245,10 +253,17 @@ nav {
     nav {
         
         height: auto;
-        #logo { display: block; width: 100%; font-size: 1em; text-align: right;}
+        text-align: center;
+        left: 0;
+        
+        #logo { display: block; width: 100%; font-size: 1em; text-align: center;}
+
+        ul { left: 0; }
 
         ul>li {
             display: block;
+            text-align: center;
+        
         }
     }
 
@@ -258,7 +273,7 @@ nav {
         form {
             width: 100%;
             position: absolute;
-            bottom: 0;
+            bottom: -14em;
             .form-grp {
                 
                 ul>li {

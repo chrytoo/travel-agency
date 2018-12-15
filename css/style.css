@@ -66,11 +66,11 @@ nav ul li a {
   color: #FFFFFF;
 }
 #jumbotron form {
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.4);
   margin: 0;
   position: absolute;
   right: 0;
-  bottom: 185px;
+  bottom: -7em;
 }
 #jumbotron form .form-grp {
   padding: 10px;
@@ -89,6 +89,7 @@ nav ul li a {
   text-decoration: none;
   color: #FFF;
   background-color: #f9be37;
+  padding: 5px;
 }
 
 #offers {
@@ -205,6 +206,13 @@ nav ul li a {
 }
 
 @media screen and (max-width: 950px) {
+  #jumbotron form {
+    bottom: -14em;
+  }
+
+  #bottom iframe {
+    width: 100%;
+  }
   #bottom #links {
     display: block;
   }
@@ -212,21 +220,27 @@ nav ul li a {
 @media screen and (max-width: 650px) {
   nav {
     height: auto;
+    text-align: center;
+    left: 0;
   }
   nav #logo {
     display: block;
     width: 100%;
     font-size: 1em;
-    text-align: right;
+    text-align: center;
+  }
+  nav ul {
+    left: 0;
   }
   nav ul > li {
     display: block;
+    text-align: center;
   }
 
   #jumbotron form {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -14em;
   }
   #jumbotron form .form-grp ul > li {
     display: block;
